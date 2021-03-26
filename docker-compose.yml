@@ -51,8 +51,8 @@ services:
     networks:
       - kong-net
     ports:
-    - "9000:8000/tcp"
-    - "9001:8001/tcp"
+    - "8000:8000/tcp"
+    - "8001:8001/tcp"
     - "8443:8443/tcp"
     healthcheck:
       test: [ "CMD", "kong", "health" ]
